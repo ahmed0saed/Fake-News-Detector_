@@ -1,4 +1,3 @@
-%%writefile app.py
 import streamlit as st
 import numpy as np
 import tensorflow as tf
@@ -45,3 +44,4 @@ if st.button("تحقق من الخبر 🔍"):
             st.success(f"✅ **خبر حقيقي (Real News)** - ثقة: {prediction*100:.1f}%")
         else:
             st.error(f"🚨 **خبر زائف (Fake News)** - شك: {(1-prediction)*100:.1f}%")
+
